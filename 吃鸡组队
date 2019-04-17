@@ -28,7 +28,7 @@ int main()
 		{
 			count = count + v1[2] + v1[3];
 			num1 = num1 - (v1[2]);
-			if ((num1/2) >= 1)//单排人数>2
+			if ((num1/2) >= 1)
 			{
 				if ((num1 / 2) > v1[1])//单排比双排多
 				{
