@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+void quicksort(int left, int right,int arr[100000]) {
+    int i, j, t, temp;
+    if (left > right)
+        return;
+    temp = arr[left]; 
+    i = left;
+    j = right;
+    while (i != j) { 
+        while (arr[j] >= temp && i < j)
+            j--;
+        while (arr[i] <= temp && i < j)
+            i++;
+        if (i < j)
+        {
+            t = arr[i];
+            arr[i] = arr[j];
+            arr[j] = t;
+        }
+    }
+    arr[left] = arr[i];
+    arr[i] = temp;
+    quicksort(left, i - 1,arr);
+    quicksort(i + 1, right,arr);
+}
+ 
+int main()
+{
+    int arr[100000];
+    int tmp;
+    int num;
+    int result=0;
+    scanf("%d", &num);
+    for (int i = 0; i < num; i++)
+    {
+        scanf("%d", &tmp);
+        arr[i] = tmp;
+    }
+    quicksort(0, num-1, arr);
+    if (num % 2 == 0)
+    {
+        for (int j = 0; j < num; j+=2)
+        {
+            result = result+arr[j + 1] - arr[j];
+        }
+    }
+    else
+    {
+        result = result + arr[0];      
+        for (int j = 0; j < num; j+=2)
+        {
+            result = result+arr[j + 2] - arr[j + 1];
+        }
+    }
+    printf("%d", result);
+    system("pause");
+    return 0;
+}
