@@ -24,7 +24,7 @@ void quicksort(int left, int right,int arr[100000]) {
     quicksort(left, i - 1,arr);
     quicksort(i + 1, right,arr);
 }
- 
+//
 int main()
 {
     int arr[100000];
