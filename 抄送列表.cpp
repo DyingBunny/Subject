@@ -16,12 +16,15 @@ int main()
 			cout << "Ignore" <<endl;
 			return 0;
 		}
+
 		else
 		{
 			cout << "Important!" << endl;
 			return 0;
 		}
+
 	}
+
 	else{
 		cout << "Important!" << endl;
 		return 0;
