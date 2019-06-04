@@ -51,10 +51,12 @@ int main()
 		result.push_back(count);
 		m--;
 	}
+	
 	for (vector<int>::iterator it1 = result.begin(); it1 != result.end(); it1++)
 	{
 		cout << (*it1) << endl;
 	}
+	
 	return 0;
 }
 
