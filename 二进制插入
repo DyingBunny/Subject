@@ -13,6 +13,7 @@ int main()
 	std::vector<int>s2;
 	int res = 0;
 	int cout2 = 0;
+
 	while (n != 0)
 	{
 		if ((n % 2) == 1)
@@ -27,6 +28,7 @@ int main()
 		cout1++;
 	}
 	cout2 = cout1;
+
 	while (m != 0)
 	{
 		if ((m % 2) == 1)
@@ -49,6 +51,7 @@ int main()
 		j++;
 	}
 	auto it = s1.end() - 1;
+
 	while (cout2)
 	{
 		if (*it == 1)
