@@ -28,6 +28,7 @@ int main()
 			break;
 		}
 	}
+
 	//判断字典排序
 	for (int j = 0; j < input.size() - 1; j++)
 	{
@@ -41,6 +42,7 @@ int main()
 		}
 	}
 	pick:
+
 	if (flag1 == 0 && flag2 == 0)
 	{
 		std::cout << "none" << std::endl;
