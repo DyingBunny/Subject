@@ -7,6 +7,7 @@ int main()
 	std::getline(std::cin, input);
 	auto begin = input.end()-1;
 	auto end = begin;
+
 	for (; *begin != ' '; begin--)
 	{
 		;
