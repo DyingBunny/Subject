@@ -14,10 +14,12 @@ int main()
 			std::cin >> money;
 			for (const auto&tmp : v1)
 			{
+
 				if (money <= 0)
 				{
 					break;
 				}
+
 				if (tmp <= money)
 				{
 					int num = money / tmp;
