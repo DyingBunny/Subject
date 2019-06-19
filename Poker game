@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
-void quicksort(int left, int right,int arr[100000]) {
+void quicksort(int left, int right,int arr[100000]) 
+{
     int i, j, t, temp;
     if (left > right)
         return;
     temp = arr[left]; 
     i = left;
     j = right;
+
     while (i != j) { 
         while (arr[j] >= temp && i < j)
             j--;
@@ -19,6 +21,7 @@ void quicksort(int left, int right,int arr[100000]) {
             arr[j] = t;
         }
     }
+
     arr[left] = arr[i];
     arr[i] = temp;
     quicksort(left, i - 1,arr);
