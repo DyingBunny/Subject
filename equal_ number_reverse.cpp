@@ -8,6 +8,7 @@ int main()
 	int tmp = num;
 	int begin = 1000;
 	std::vector<int> v1;
+	
 	while (tmp!=v1.size())
 	{
 		int result = begin * 9;
@@ -38,9 +39,11 @@ int main()
 			begin++;
 		}
 	}
+	
 	for (int i = 0; i < num;i++)
 	{
 		std::cout << v1[num] << std::endl;
 	}
+	
 	return 0;
 }
