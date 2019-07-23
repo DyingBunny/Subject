@@ -10,6 +10,7 @@ int main()
 
 	while (M)
 	{
+		
 		if (M < 0)
 		{
 			M = -M;
@@ -17,8 +18,10 @@ int main()
 		}
 		result = table[M%N]+result;
 		M /= N;
+		
 	}
 
 	std::cout << result << std::endl;
+	
 	return 0;
 }
