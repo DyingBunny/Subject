@@ -5,13 +5,13 @@ using namespace std;
 
 //int main()
 //{
+//
 //	vector<int> numbers = { 1,2,3,2,2,2,5,4,2};
 //	vector<int> v1(20, 0);
 //	for (const auto it : numbers)
 //	{
 //		v1[it] += 1;
 //	}
-//
 //	if (*max_element(v1.begin(), v1.end()) > numbers.size() / 2)
 //	{
 //		for (int i = 0; i < v1.size();i++)
