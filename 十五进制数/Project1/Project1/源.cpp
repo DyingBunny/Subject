@@ -3,22 +3,23 @@
 #include<vector>
 #include<algorithm>
 #define Divisor 2;
-//³ıÊı£¬¿ÉÒÔÉèÖÃ×ª»»³É²»Í¬µÄ½øÖÆ
+//é™¤æ•°ï¼Œå¯ä»¥è®¾ç½®è½¬æ¢æˆä¸åŒçš„è¿›åˆ¶
 
 char JudgeCharacter(const int &remainder)
-//ÅĞ¶ÏÓàÊı¶ÔÓ¦µÄ×Ö·û
+//åˆ¤æ–­ä½™æ•°å¯¹åº”çš„å­—ç¬¦
 {
 	if (remainder < 10)
 	{
 		char a[3];
 		_itoa(remainder, a, 10);
-		//int to char*µÄ×ª»»
+		//int to char*çš„è½¬æ¢
 		return (char)*a;
 	}
+	
 	else
 	{
 		return (char)(65 + (remainder - 10));
-		//½«´óÓÚ10µÄÊı×ª»»³É×Ö·û£¬Í¨¹ı¶ÔÓ¦µÄASCIIÂëÊµÏÖ
+		//å°†å¤§äº10çš„æ•°è½¬æ¢æˆå­—ç¬¦ï¼Œé€šè¿‡å¯¹åº”çš„ASCIIç å®ç°
 	}
 }
 
@@ -33,11 +34,11 @@ std::string DecimalToDivisor(const int &input)//
 		remainder = tmp%Divisor;
 		character = JudgeCharacter(remainder);
 		result += character;
-		//stringÖĞ²åÈëÓàÊıchar
+		//stringä¸­æ’å…¥ä½™æ•°char
 		tmp = tmp / Divisor;
 	}
 	std::reverse(result.begin(), result.end());
-	//ÄæÖÃµÃµ½¶ÔÓ¦µÄ½øÖÆÊı
+	//é€†ç½®å¾—åˆ°å¯¹åº”çš„è¿›åˆ¶æ•°
 	return result;
 }
 
