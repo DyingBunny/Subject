@@ -1,0 +1,20 @@
+﻿生成启动时间为 2019/9/12 19:52:27。
+     1>项目“E:\比特\Subject\矩阵最小路径\Project1\Project1\Project1.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Application\VS2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "源.cpp"
+         源.cpp
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(9): error C2057: 应输入常量表达式
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(9): error C2466: 不能分配常量大小为 0 的数组
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(9): error C2087: “arr”: 缺少下标
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(9): error C2133: “arr”: 未知的大小
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(10): error C2057: 应输入常量表达式
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(10): error C2466: 不能分配常量大小为 0 的数组
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(10): error C2087: “dp”: 缺少下标
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(10): error C2133: “dp”: 未知的大小
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(11): error C2070: “int [][1]”:  非法的 sizeof 操作数
+     1>e:\比特\subject\矩阵最小路径\project1\project1\源.cpp(26): error C2065: “j”: 未声明的标识符
+     1>已完成生成项目“E:\比特\Subject\矩阵最小路径\Project1\Project1\Project1.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.46
